@@ -1,7 +1,7 @@
 Object Oriented Programming Gallery
 ===================================
 
-An overview to the Object Oriented Programming projects developed through Feburary to May 2021.
+An overview of the Object Oriented Programming projects developed from February to May 2021.
 
 Copyright(c) 05/10/2021 Muyuan Zhang
 
