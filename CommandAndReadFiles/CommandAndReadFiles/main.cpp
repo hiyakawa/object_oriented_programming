@@ -30,10 +30,10 @@ int main(int argc, const char * argv[]) {
         return error_message(argv[0], err_message, TOO_MANY_FILENAMES);
     }
 
-    //parsing the input file
+    // parsing the input file
     const char* file_name = argv[1];
 
-    //if the file fails to open
+    // if the file fails to open
     switch (parseFile(str_vec, file_name)) {
         case NO_FILE_NAME_GIVEN:
             // call the usage message function
@@ -45,7 +45,7 @@ int main(int argc, const char * argv[]) {
             return error_message(argv[0], err_message, FILE_OPEN_FAILED);
             
         case SUCCESS:
-            //check if it is an integer
+            // check if it is an integer
             for (vector<string>::const_iterator iter = str_vec.begin(); iter != str_vec.end(); iter++) {
                 if (isAllNum(* iter)) {
                     int num;
@@ -56,7 +56,7 @@ int main(int argc, const char * argv[]) {
                 }
             }
             
-            //print the string which contains non-digit characters to the standard output stream
+            // print the string which contains non-digit characters to the standard output stream
             printStringVector(str_vec);
             printIntVector(int_vec);
 
